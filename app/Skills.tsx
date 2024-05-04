@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 import Carousel from "./component/Carousel";
 import ProfessionalSkills from "./component/ProfessionalSkills";
-import BarCharts from "./component/charts";
 import ImageGrid from "./component/SkillsTabs";
 
 export const runtime = "edge";
@@ -59,7 +58,6 @@ function Skills() {
               professional website today to unlock exponential growth
               opportunities
             </p>
-            <BarCharts />
           </div>
 
           {/* Skills tab with images describing the kind of work I do. */}
