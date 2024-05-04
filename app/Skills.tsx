@@ -5,8 +5,6 @@ import Carousel from "./component/Carousel";
 import ProfessionalSkills from "./component/ProfessionalSkills";
 import ImageGrid from "./component/SkillsTabs";
 
-export const runtime = "edge";
-
 function Skills() {
   const scrollRef = React.useRef<HTMLDivElement>(null);
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { tabImg } from "../lib/image_gallery";
+import { tabImg } from "../lib/global_links";
 
 function SkillsTab() {
   const [activeTab, setActiveTab] = useState(0);

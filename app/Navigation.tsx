@@ -4,17 +4,10 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "./utils/cn";
 import { IconArrowRight, IconMenu2, IconX } from "@tabler/icons-react";
-
-export const runtime = "edge";
-
-const navItems = [
-  { name: "about", link: "#about" },
-  { name: "projects", link: "#skill" },
-  { name: "contact", link: "#contact" },
-];
+import { nav_items } from "./lib/global_links";
 
 export default function Navigation() {
-  const [isActive, setIsActive] = useState(navItems[0].name);
+  const [isActive, setIsActive] = useState(nav_items[0].name);
   const [isNavVisible, setIsNavVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -93,7 +86,7 @@ export default function Navigation() {
           )}
         >
           <ul className="flex flex-col items-center gap-20 pt-20">
-            {navItems.map((item, index) => (
+            {nav_items.map((item, index) => (
               <li
                 key={item.name}
                 className="relative flex h-[5.5ch] w-[20ch] justify-center overflow-hidden py-2"
@@ -147,7 +140,7 @@ export default function Navigation() {
         {/* --- Desktop setup navigation. --- */}
         <nav className="relative py-1 md:py-0">
           <ul className="hidden gap-5 md:flex">
-            {navItems.map((item) => (
+            {nav_items.map((item) => (
               <li
                 key={item.name}
                 className="relative flex h-[3.5ch] w-[9ch] justify-center overflow-hidden py-2"

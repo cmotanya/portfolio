@@ -10,8 +10,6 @@ import {
 import React, { ReactNode } from "react";
 import Link from "next/link";
 
-export const runtime = "edge";
-
 function FooterIcon({
   icon,
   tooltipText,

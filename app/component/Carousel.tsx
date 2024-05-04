@@ -1,6 +1,6 @@
 import { Suspense, useCallback, useEffect, useState } from "react";
 import Image from "next/image";
-import { images } from "../lib/image_gallery";
+import { images } from "../lib/global_links";
 import { cn } from "../utils/cn";
 
 const Carousel = () => {
