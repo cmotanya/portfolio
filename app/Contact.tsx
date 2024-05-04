@@ -2,6 +2,8 @@ import React, { ReactNode } from "react";
 import { IconMail, IconMap, IconPhoneCall } from "@tabler/icons-react";
 import ContactForm from "./component/ContactForm";
 
+export const runtime = "edge";
+
 function ContactComponent({ icon, text }: { icon: ReactNode; text: string }) {
   return (
     <div className="relative mb-2 ml-10 flex h-12 w-[25ch] items-center gap-4 rounded-md bg-slate-800/50 ps-3 text-stone-300 outline-none outline-offset-2 outline-slate-800 before:absolute before:-left-8 before:top-1/2 before:size-5 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-rose-800 after:absolute after:-left-8 after:top-1/2 after:size-2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:bg-gray-900 md:mb-0">

@@ -6,6 +6,8 @@ import ProfessionalSkills from "./component/ProfessionalSkills";
 import BarCharts from "./component/charts";
 import ImageGrid from "./component/SkillsTabs";
 
+export const runtime = "edge";
+
 function Skills() {
   const scrollRef = React.useRef<HTMLDivElement>(null);
 

@@ -7,6 +7,8 @@ import {
 } from "@tabler/icons-react";
 import { motion, useAnimation } from "framer-motion";
 
+export const runtime = "edge";
+
 let heading = "a web developer.";
 
 function About() {

@@ -5,6 +5,8 @@ import { useEffect, useRef, useState } from "react";
 import { cn } from "./utils/cn";
 import { IconArrowRight, IconMenu2, IconX } from "@tabler/icons-react";
 
+export const runtime = "edge";
+
 const navItems = [
   { name: "about", link: "#about" },
   { name: "projects", link: "#skill" },
