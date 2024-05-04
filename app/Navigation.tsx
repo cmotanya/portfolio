@@ -3,14 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "./utils/cn";
-import {
-  IconArrowRight,
-  IconMenu2,
-  IconX,
-} from "@tabler/icons-react";
-
-import { Quicksand as Ubuntu } from "next/font/google";
-const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400"] });
+import { IconArrowRight, IconMenu2, IconX } from "@tabler/icons-react";
 
 const navItems = [
   { name: "about", link: "#about" },
@@ -68,10 +61,7 @@ export default function Navigation() {
   }, [isMenuOpen]);
 
   return (
-    <header
-      ref={headerRef}
-      className={`${ubuntu.className} relative top-0 z-30 w-full`}
-    >
+    <header ref={headerRef} className="relative top-0 z-30 w-full">
       <div
         className={cn(
           "absolute flex w-full items-center justify-between bg-gray-800 p-3 text-neutral-200 transition-transform duration-300 [animation-range-end:250vh] [animation-range-start:200vh] [animation-timeline:view()]",

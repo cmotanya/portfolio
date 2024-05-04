@@ -1,11 +1,5 @@
 import type { Metadata } from "next";
-import { Josefin_Sans as Poppins } from "next/font/google";
 import "./globals.css";
-
-const quicksand = Poppins({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,9 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${quicksand.className} relative min-h-screen w-full bg-gray-900`}
-      >
+      <body className="font-quicksand relative min-h-screen w-full bg-gray-900">
         {children}
       </body>
     </html>

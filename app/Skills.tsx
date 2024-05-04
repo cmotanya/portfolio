@@ -1,13 +1,9 @@
 import React from "react";
-import { Quicksand as Poppins } from "next/font/google";
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600"] });
 import { motion } from "framer-motion";
 
 import Carousel from "./component/Carousel";
-import SkillsTab from "./component/SkillsTabs";
 import ProfessionalSkills from "./component/ProfessionalSkills";
 import BarCharts from "./component/charts";
-import { tabImg } from "./lib/image_gallery";
 import ImageGrid from "./component/SkillsTabs";
 
 function Skills() {
@@ -17,14 +13,12 @@ function Skills() {
     <section id="skill" className="py-[3rem] text-neutral-300">
       <div className="mx-auto w-[--width]">
         <div className="text-pretty px-6">
-          <h1 className="py-3 text-center text-5xl uppercase md:pt-0">
+          <h1 className="font-ubuntu py-3 text-center text-5xl uppercase md:pt-0">
             projects{" "}
           </h1>
         </div>
 
-        <div
-          className={`${poppins.className} flex basis-full flex-col justify-center space-y-6 text-lg`}
-        >
+        <div className="font-quicksand flex basis-full flex-col justify-center space-y-6 text-lg">
           <div ref={scrollRef} className="text-pretty">
             <motion.div
               className="space-y-3 py-2"

@@ -37,7 +37,7 @@ function SkillsTab() {
 
       {/* Tab content */}
       <div className="w-full md:w-[80%]">
-        <div className="grid w-full grid-cols-2 gap-5 md:grid-cols-3">kl
+        <div className="grid w-full grid-cols-2 gap-5 md:grid-cols-3">
           {tabImg[activeTab].images.map(
             (image, index) =>
               image && (

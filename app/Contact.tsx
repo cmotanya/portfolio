@@ -1,6 +1,4 @@
 import React, { ReactNode } from "react";
-import { Quicksand as Poppins } from "next/font/google";
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600"] });
 import { IconMail, IconMap, IconPhoneCall } from "@tabler/icons-react";
 import ContactForm from "./component/ContactForm";
 
@@ -19,11 +17,11 @@ function Contact() {
     <section id="contact" className="pb-[8rem] pt-[3rem] text-stone-300">
       <div className="mx-auto w-[--width]">
         <div className="text-pretty px-6">
-          <h1 className="py-3 text-center text-5xl uppercase md:pt-0">
+          <h1 className="font-ubuntu py-3 text-center text-5xl font-bold uppercase md:pt-0">
             contact{" "}
           </h1>
         </div>
-        <div className={`${poppins.className} text-lg`}>
+        <div className="font-quicksand text-lg">
           <h2 className="py-3 font-semibold">
             Have a question or need assistance? Contact me today!
           </h2>

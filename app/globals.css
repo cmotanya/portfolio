@@ -3,6 +3,36 @@
 @tailwind utilities;
 
 @layer base {
+  /* Quicksand normal font style. */
+  @font-face {
+    font-family: "Quicksand";
+    src: url("./../public/font/Quicksand-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+  }
+  /* Quicksand semibold font style. */
+  @font-face {
+    font-family: "Quicksand";
+    src: url("./../public/font/Quicksand-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-display: swap;
+  }
+  /* Quicksand bold font style. */
+  @font-face {
+    font-family: "Quicksand";
+    src: url("./../public/font/Quicksand-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  /* Ubuntu font style. */
+  @font-face {
+    font-family: "Ubuntu";
+    src: url("./../public/font/Ubuntu-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+  }
+
   :root {
     --width: min(75ch, calc(100% - 0.5rem));
   }

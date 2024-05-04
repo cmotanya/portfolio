@@ -1,7 +1,5 @@
 import { Suspense, useCallback, useEffect, useState } from "react";
 import Image from "next/image";
-import { Poppins } from "next/font/google";
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "800"] });
 import { images } from "../lib/image_gallery";
 import { cn } from "../utils/cn";
 
@@ -67,12 +65,7 @@ const Carousel = () => {
                   />
                   <h3 className="text-center font-semibold">{title}</h3>
                   <p className="text-balance text-center">
-                    <span
-                      className={cn(
-                        "absolute left-1 text-[5rem] text-slate-500 md:left-28",
-                        poppins.className,
-                      )}
-                    >
+                    <span className="font-quicksand absolute left-1 text-[5rem] text-slate-500 md:left-28">
                       &quot;
                     </span>
                     {text}

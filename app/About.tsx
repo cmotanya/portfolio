@@ -1,27 +1,18 @@
 import React, { useEffect, useRef } from "react";
 import { TextGenerateEffect } from "./component/textGenWords";
-
-import { Quicksand } from "next/font/google";
 import {
   IconDeviceCctv,
   IconDeviceLaptop,
   IconTools,
 } from "@tabler/icons-react";
-import { cn } from "./utils/cn";
 import { motion, useAnimation } from "framer-motion";
-const quicksand = Quicksand({ subsets: ["latin"], weight: ["500", "700"] });
 
 let heading = "a web developer.";
 
 function About() {
   return (
     <section id="about" className="pb-8 sm:pb-0 md:pt-[calc(5rem-3rem)]">
-      <div
-        className={cn(
-          "mx-auto w-[--width] pt-[3.5rem] md:mt-8",
-          quicksand.className,
-        )}
-      >
+      <div className="font-quicksand mx-auto w-[--width] pt-[3.5rem] md:mt-8">
         <p className="mt-12 text-pretty text-start text-gray-300">
           hi, I am <span className="uppercase">cornelius! 😉</span>
         </p>
@@ -98,7 +89,7 @@ function ServiceBlock({
       className="flex flex-col items-center text-balance rounded-md border-2 border-slate-800 bg-gray-900/80 p-2 text-center text-gray-500 shadow-md"
     >
       <span className="md:my-2">{icon}</span>
-      <h3 className="font-semibold uppercase">{title}</h3>
+      <h3 className=" font-bold uppercase">{title}</h3>
       <p>{description}</p>
     </motion.div>
   );

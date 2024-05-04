@@ -1,4 +1,5 @@
 import { transform } from "next/dist/build/swc";
+import { Quicksand } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const {
@@ -13,24 +14,27 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      /* Background-images for Desktop and mobile */
+      /* font */
+      fontFamily: {
+        quicksand: ["Quicksand", "sans-serif"],
+        ubuntu: ["Ubuntu", "sans"],
+      },
+
+      /* background-images for Desktop and mobile */
       backgroundImage: {
         "header-pattern": "url('/stacked-steps.svg')",
         "header-pattern-phone": "url('/stacked-steps-mobile.svg')",
       },
 
-      /* Animation styles */
+      /* animation styles */
       animation: {
         "sticky-nav":
           "sticky-nav 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards",
         "gradient-animation": "gradient-animation 30s ease infinite",
         "slide-panel": "slide-panel 0.5s linear forwards",
       },
-      animationDuration: {
-        "30": "30s",
-      },
 
-      /* Animation keyframes styles */
+      /* animation keyframes styles */
       keyframes: {
         /* sticky-nav animation */
         "sticky-nav": {
@@ -54,21 +58,13 @@ const config: Config = {
           to: { transform: "skewY(0deg)" },
         },
       },
-
-      /* Colors for styling. */
-      colors: {
-        primaryColor: "#3730a3",
-        secondaryColor: "#6f6f6f",
-        accentColor: "#a8a29e",
-        dangerColor: "#ef4444",
-      },
     },
   },
   plugins: [addVariablesForColors],
 };
 export default config;
 
-// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+// this plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
