@@ -181,8 +181,8 @@ function SkillDrawer({
           toggleDrawer(skillName);
         }}
         className={cn(
-          "rounded-full bg-slate-700/50 px-4 py-2 outline-none outline-offset-2 outline-gray-800 transition-all hover:bg-indigo-700/50 hover:text-slate-100 hover:outline-gray-700 active:bg-indigo-800",
-          isOpen ? "bg-indigo-800/50" : "",
+          "rounded-full bg-slate-700/50 px-4 py-2 outline-none outline-offset-2 outline-gray-800 transition-all hover:bg-blue-700/50 hover:text-slate-100 hover:outline-gray-700 active:bg-blue-800/50",
+          isOpen ? "bg-blue-800" : "",
         )}
       >
         {isOpen ? "Hide Details" : "Show Details"}
